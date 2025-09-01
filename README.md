@@ -13,7 +13,7 @@ Or you can also use the `twi` wrapper:
 ```shell
 sudo curl -f https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/twi -o /usr/local/bin/twi && sudo chmod +x /usr/local/bin/twi
 
-twi aws
+sudo twi aws
 ```
 
 If you want to see which commands have been installed this way on your system:
