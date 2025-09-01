@@ -7,5 +7,4 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-curl https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/$1 > /usr/local/bin/$1
-chmod +x /usr/local/bin/$1
+sudo curl https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/$1 -o /usr/local/bin/$1 && sudo chmod +x /usr/local/bin/$1

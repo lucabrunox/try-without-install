@@ -1,0 +1,2 @@
+#!/bin/sh
+exec docker run --rm -it -v $(pwd):$(pwd) -v ~/.config/gcloud/:/root/.config/gcloud/ google/cloud-sdk "$@"
