@@ -7,4 +7,9 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
+if [ -f "/usr/local/bin/$1" ]; then
+  echo "/usr/local/bin/$1 already exists, making a backup to /usr/local/bin/$1.bak"
+  sudo cp -p /usr/local/bin/$1 /usr/local/bin/$1.bak
+fi
+
 sudo curl https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/$1 -o /usr/local/bin/$1 && sudo chmod +x /usr/local/bin/$1

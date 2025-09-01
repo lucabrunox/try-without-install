@@ -1,2 +1,2 @@
 #!/bin/sh
-exec docker run --rm -it -v $(pwd):$(pwd) -v ~/.aws:/root/.aws amazon/aws-cli "$@"
+exec docker run --rm -it -v $(pwd):$(pwd) -e HOME -u $(id -u) -v ~/.aws:/$HOME/.aws amazon/aws-cli "$@"
