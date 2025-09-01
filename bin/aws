@@ -1,2 +1,5 @@
 #!/bin/sh
+
+# https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/aws
+
 exec docker run --rm -it -v $(pwd):$(pwd) -e HOME -u $(id -u) -v ~/.aws:/$HOME/.aws amazon/aws-cli "$@"
