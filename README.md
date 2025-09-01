@@ -5,8 +5,7 @@ Curated list of commands that can be installed with Docker as package manager wi
 Install the `twi` wrapper:
 
 ```shell
-curl https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/twi > /usr/local/bin/twi
-chmod +x /usr/local/bin/twi
+curl https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/twi > /usr/local/bin/twi && chmod +x /usr/local/bin/twi
 ```
 
 And now to install `aws` you can do:
