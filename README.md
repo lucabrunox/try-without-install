@@ -2,14 +2,7 @@
 
 Curated list of commands that can be installed with Docker as package manager without the need to mutate your system with snap/apt/rpm/whatever.
 
-It's easy, want to install `aws` CLI?
-
-```shell
-curl https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/aws > /usr/local/bin/aws
-chmod +x /usr/local/bin/aws
-```
-
-If that's too long you can install the `twi` wrapper:
+Install the `twi` wrapper:
 
 ```shell
 curl https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/twi > /usr/local/bin/twi
