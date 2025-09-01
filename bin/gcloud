@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 
 # https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/gcloud
 
-exec docker run --rm -it -v $(pwd):$(pwd) -e HOME -u $(id -u) -v ~/.config/gcloud/:$HOME/.config/gcloud/ google/cloud-sdk gcloud "$@"
+exec docker run --rm -i -v "$PWD:$PWD" -w "$PWD" --network host --env-file <(env | grep -v PATH) -u $(id -u) -v $HOME:$HOME google/cloud-sdk gcloud "$@"
