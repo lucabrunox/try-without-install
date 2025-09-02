@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/jq
+# https://raw.githubusercontent.com/lucabrunox/docker-package-manager/refs/heads/main/jq
 
 exec docker run --rm -i -v "$PWD:$PWD" -w "$PWD" --network host --env-file <(env | grep -v PATH) -u $(id -u) -v $HOME:$HOME ghcr.io/jqlang/jq "$@"

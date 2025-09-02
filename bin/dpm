@@ -12,4 +12,4 @@ if [ -f "/usr/local/bin/$1" ]; then
   cp -p /usr/local/bin/$1 /usr/local/bin/$1.bak
 fi
 
-curl https://raw.githubusercontent.com/lucabrunox/try-without-install/refs/heads/main/bin/$1 -o /usr/local/bin/$1 && chmod +x /usr/local/bin/$1
+curl https://raw.githubusercontent.com/lucabrunox/docker-package-manager/refs/heads/main/bin/$1 -o /usr/local/bin/$1 && chmod +x /usr/local/bin/$1
